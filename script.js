@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const today = new Date();
     const options = { month: 'long', day: 'numeric' };
     const formattedDate = today.toLocaleDateString(undefined, options);
-    subheadingDate.textContent = `read what you tweeted on ${formattedDate} over the past decade`;
+    subheadingDate.textContent = `Read what you tweeted on ${formattedDate} over the past decade`;
 
     // Load username from local storage
     const savedUsername = localStorage.getItem('twitterUsername');
