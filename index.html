@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On This Day</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-black text-white flex flex-col items-center justify-center min-h-screen p-4">
+    <div class="w-full max-w-md">
+        <header class="text-left mb-8 w-full">
+            <h1 class="text-4xl sm:text-5xl font-semibold">Twitter Time Machine</h1>
+            <h2 id="subheading-date" class="text-xl sm:text-2xl text-gray-400 mt-2"></h2>
+        </header>
+
+        <main class="w-full">
+            <div class="flex items-center border border-gray-700 rounded-md bg-gray-800 mb-6">
+                <span class="px-3 py-2 text-gray-400 bg-gray-700 rounded-l-md">
+                    @
+                </span>
+                <input type="text" id="username-input" class="pl-2 pr-3 py-2 w-full bg-gray-800 rounded-r-md focus:ring-blue-500 focus:border-blue-500 placeholder-gray-500 outline-none" placeholder="your twitter username">
+            </div>
+
+            <button id="cta-button" class="w-full text-white font-semibold py-3 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50" style="background-color: #1DA1F2;">
+                Show my tweets
+            </button>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
